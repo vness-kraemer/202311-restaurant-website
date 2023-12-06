@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mein Restaurant</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLE -->
+    <style>
+      body {
+        margin: 0px;
+        font-family: "Montserrat", sans-serif;
+      }
+      h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 4em;
+      }
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-decoration: underline;
+      }
+      .atf-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+
+      .main-container {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 500px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .container {
+        padding-left: 100px;
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .googlemaps {
+        height: 350px;
+        width: 100%;
+      }
+
+      .footer {
+        background-color: rgba(35, 38, 41);
+        color: white;
+        padding: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-link {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .footer-link:hover {
+        text-decoration: underline;
+        color: orange;
+      }
+
+      .menu {
+        position: absolute;
+        top: 32px;
+        right: 100px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 32px;
+        filter: drop-shadow(2px 6px 8px rgba(0, 0, 0, 0.5));
+      }
+
+      .menu a:hover {
+        color: #edbb0a;
+      }
+
+      .order-btn {
+        background-color: #edbb0a;
+        border-radius: 40px;
+        padding: 12px;
+        color: black !important;
+      }
+
+      .order-btn:hover {
+        background-color: yellow;
+      }
+
+      a {
+        color: #edbb0a;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- PICTURE  -->
+    <img class="atf-image" src="./img/aot.jpg" />
+    <!-- MAIN CONTAINER  -->
+    <div class="main-container">
+      <h1>Herzlich willkommen!</h1>
+      <p>Hier findest du einen Überblick über unsere Speisen.</p>
+    </div>
+    <!-- NAVBAR -->
+    <div class="menu">
+      <a href="#contact">RESERVIEREN</a>
+      <a class="order-btn" href="#">BESTELL ONLINE</a>
+      <a href="contact">KONTAKT</a>
+      <a href="address">ANFAHRT</a>
+    </div>
+    <!-- ÖFFNUNGSZEITEN  -->
+    <div class="container">
+      <h2>Unsere Öffnungszeiten</h2>
+      <table>
+        <tr>
+          <td>Montag bis Freitag:</td>
+          <td>12:00-23:00 Uhr</td>
+        </tr>
+        <tr>
+          <td>Samstag</td>
+          <td>11:00-24:00 Uhr</td>
+        </tr>
+        <tr>
+          <td>Sonntag</td>
+          <td>11:00-24:00 Uhr</td>
+        </tr>
+      </table>
+    </div>
+    <!-- ANFAHRT  -->
+    <div class="container" id="address">
+      <h2>Anfahrt</h2>
+      <p>Unsere Adresse lautet: Musterstraße 123, 56789 Musterstadt</p>
+      <iframe
+        class="googlemaps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380514.49339096923!2d-88.06159505386702!3d41.83326173644608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20Illinois%2C%20USA!5e0!3m2!1sde!2sde!4v1701705624714!5m2!1sde!2sde"
+        width="900"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- TAGESKARTE  -->
+    <div class="container">
+      <h2>Unsere Tageskarte</h2>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>Pizza</td>
+          <td>8.99€</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Pilzpfanne</td>
+          <td>11.99€</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Bauernsalat</td>
+          <td>5.99€</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Mousse au Chocolat</td>
+          <td>7.99€</td>
+        </tr>
+      </table>
+      <p>
+        Jetzt die Tageskarte
+        <a href="./downloads/unsere-tageskarte.pdf" target="_blank"
+          >herunterladen</a
+        >
+      </p>
+    </div>
+    <!-- KONTAKT  -->
+    <div class="container" id="contact">
+      <h2>Kontakt</h2>
+      <p>
+        So kannst du uns kontaktieren!<br />
+        Telefon:
+        <a href="tel:02838383882">02838383882</a><br />
+        E-Mail:
+        <a href="mailto:info@musterrestaurant.de">info@musterrestaurant.de</a>
+      </p>
+      <br />
+    </div>
+    <!-- FOOTER  -->
+    <div class="footer">
+      <div>(c) Copyright 2023 Developer Akademie GmbH <br /></div>
+      <div>
+        <a href="impressum.html" class="footer-link">Impressum</a> |
+        <a href="datenschutz.html" class="footer-link">Datenschutz</a>
+      </div>
+    </div>
+  </body>
+</html>
